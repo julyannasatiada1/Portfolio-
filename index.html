@@ -1,76 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link href="https://jsdelivr.net" rel="stylesheet"> 
-</head> 
-<body class="bg-light container my-4"> 
-   
-  <header class="bg-dark text-white text-center py-5 mb-5 rounded shadow-sm"> 
-    <h1 class="display-3 fw-bold m-0 text-uppercase tracking-wide">Julyanna Marie Satiada</h1> 
-    <p class="lead text-white-50 m-0 mt-2">IS Student</p> 
-  </header> 
- 
-  <main class="my-5"> 
-    <section id="about" class="row align-items-center mb-5"> 
-      <div class="col-md-4"><img src="Screenshot 2026-09-10 152021.png" class="img-thumbnail" alt="Julyanna Satiada"></div> 
-      <div class="col-md-8"><h2>About Me</h2><p class="lead">Hi, I’m Jane Doe. I’m an architect who enjoys designing spaces that are simple, comfortable, and practical. I like working on residential projects and exploring different ways to make a space feel open and welcoming. Outside of work, I enjoy sketching ideas and learning new design tools.</p> 
-      
-      </div>  
-    </section> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julyanna's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
 
-    <section id="skills" class="mb-5"> 
-      <h2 class="display-3 fw-bold m-0 text-uppercase tracking-wide">Skills</h2> 
-      <ul class="list-group"> 
-        <li class="list-group-item">Architectural Design</li> 
-        <li class="list-group-item">SketchUp</li> 
-        <li class="list-group-item">Space planning</li> 
-        <li class="list-group-item">handsketching</li> 
-      </ul> 
-    </section>
-    <div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Julyanna</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+  </nav>
+
+  <div class="container text-center mt-4">
+    <h1>Julyanna Marie Satiada</h1>
+    <p>Information Systems Student</p>
+  </div>
+</header>
+
+<!-- ---------------------- -->
+
+<main class="container mt-4">
+
+  <section id="about" class="mb-5">
+    <h2>About Me</h2>
+    <div class="row mt-3 align-items-center">
+      <div class="col-md-4 mb-3 mb-md-0">
+        <img src="329b54d07444f009b0634f438db9a449.jpg" alt="Julyanna Satiada" class="img-fluid rounded">
+      </div>
+    <div class="col-md-8">
+        <p>
+          Hi, I'm Julyanna! I am an Information Systems student *something something descriptions*
+        </p>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+  </section>
+
+
+  <!-- ---------------------- -->
+
+ <section id="skills" class="mb-5">
+    <h2>Skills</h2>
+    <ul class="mt-3">
+      <li>Skill # 1</li>
+        <li>Skill # 2</li>
+      <li>Skill # 3</li>
+      <li>Skill # 4</li>
+      <li>Skill # 5</li>
+    </ul>
+  </section>
+
+  <!-- ---------------------- -->
+
+  <section id="projects" class="mb-5">
+    <h2>Projects</h2>
+
+    <div id="projectCarousel" class="carousel carousel-dark slide mt-3" data-bs-ride="carousel">
+      <div class="carousel-inner px-5">
+        
+        <div class="carousel-item active">
+          <div class="card mx-auto" style="max-width: 500px;">
+            <div class="card-body text-center">
+              <h3 class="card-title h5 mb-0">*InsertProjectHere #1*</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card mx-auto" style="max-width: 500px;">
+            <div class="card-body text-center">
+              <h3 class="card-title h5 mb-0">*InsertProjectHere #2*</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="card mx-auto" style="max-width: 500px;">
+            <div class="card-body text-center">
+              <h3 class="card-title h5 mb-0">*InsertProjectHere #3*</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card mx-auto" style="max-width: 500px;">
+            <div class="card-body text-center">
+              <h3 class="card-title h5 mb-0">*InsertProjectHere #4*</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- ---------------------- -->
+
+  <section id="contact" class="mb-5">
+    <h2>Contact Me</h2>
+
+    <form onsubmit="event.preventDefault();">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" id="name" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea id="message" class="form-control" rows="3"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div class="mt-3">
+      <a href="https://www.linkedin.com" target="_blank" class="btn btn-outline-primary">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ---------------------- -->
+
+<footer class="bg-white text-dark border-top py-3 mt-5">
+  <div class="container d-flex justify-content-end align-items-center">
+    <div>
+      <a href="https://github.com/julyannasatiada1" target="_blank" class="text-dark me-3">GitHub Profile</a>
+      <a href="https://github.com/julyannasatiada1/Portfolio-" target="_blank" class="text-dark">Portfolio Repo</a>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-    
-    <section id="contact" class="mb-5"> 
-      <h2>Contact Me</h2> 
-      <form class="mb-3"> 
-        <div class="mb-2"><input type="text" class="form-control" placeholder="Name" required></div> 
-        <div class="mb-2"><input type="email" class="form-control" placeholder="Email" required></div> 
-        <div class="mb-2"><textarea class="form-control" placeholder="Message" required></textarea></div> 
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+</footer>
 
-      <div class="mt-2">
-        <a href="https://linkedin.com" target="_blank" class="btn btn-outline-primary">Linkedin Profile</a>
-      </div>
-    </section> 
-  </main> 
- 
-  <footer class="bg-dark text-white text-center py-3 rounded"> 
-    <p class="m-0">&copy; 2026 Jane Doe. <a href="https://github.com" target="_blank" class="text-white">[Insert GitHub Footer Link Text]</a></p> 
-  </footer> 
- 
-  <script src="https://jsdelivr.net"></script> 
-</body> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
